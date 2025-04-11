@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple & Elegant Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #f8f9fa;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: #343a40;
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 0.5rem;
+        }
+        .section-content {
+            margin-bottom: 2rem;
+        }
+        .profile-name {
+            font-size: 2.25rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        .profile-title {
+            font-size: 1.25rem;
+            color: #6c757d;
+            margin-bottom: 1rem;
+        }
+        .contact-info {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+        .experience-item {
+            margin-bottom: 1.5rem;
+        }
+        .experience-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #343a40;
+            margin-bottom: 0.25rem;
+        }
+        .experience-company {
+            font-size: 1rem;
+            color: #6c757d;
+            margin-bottom: 0.25rem;
+        }
+        .experience-dates {
+            font-size: 0.9rem;
+            color: #868e96;
+            margin-bottom: 0.5rem;
+        }
+        .experience-description {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+        .education-item {
+            margin-bottom: 1.5rem;
+        }
+        .education-degree {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #343a40;
+            margin-bottom: 0.25rem;
+        }
+        .education-institution {
+            font-size: 1rem;
+            color: #6c757d;
+            margin-bottom: 0.25rem;
+        }
+        .education-dates {
+            font-size: 0.9rem;
+            color: #868e96;
+            margin-bottom: 0.5rem;
+        }
+        .skills-list {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+        .skills-list-item {
+            background-color: #e9ecef;
+            color: #343a40;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .project-item {
+            margin-bottom: 1.5rem;
+        }
+        .project-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #343a40;
+            margin-bottom: 0.25rem;
+        }
+        .project-description {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+        .project-technologies {
+            font-size: 0.9rem;
+            color: #868e96;
+        }
+
+        .profile-image-wrapper {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 1rem;
+            position: absolute; /* Changed to absolute positioning */
+            top: 0;
+            right: 0; /* Positioned to the top right */
+            margin-top: 2rem;  /* Added margin to top */
+            border: 3px solid #dee2e6;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-image-overlay-text {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .header-section { /* Added a new container for name and title */
+            margin-bottom: 2rem;
+            text-align: left; /* Aligned text to the left */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="section-content">
+            <div class="profile-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1503023345319-a7aeb615061c?q=80&w=100&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile Picture" class="profile-image">
+                <div class="profile-image-overlay">
+                    <span class="profile-image-overlay-text">Night Sky</span>
+                </div>
+            </div>
+            <div class="header-section">
+                <h1 class="profile-name">John Doe</h1>
+                <h2 class="profile-title">Software Engineer</h2>
+                <div class="contact-info">
+                    <p>Email: john.doe@example.com | Phone: (123) 456-7890 | LinkedIn: linkedin.com/in/johndoe</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-content">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-item">
+                <h3 class="experience-title">Senior Software Engineer</h3>
+                <p class="experience-company">Tech Innovators Inc.</p>
+                <p class="experience-dates">2018 - Present</p>
+                <p class="experience-description">
+                    Led the development of a new e-commerce platform, resulting in a 20% increase in sales.
+                    Mentored junior developers and promoted best practices in software development.
+                    Utilized technologies such as Java, Spring Boot, and React.
+                </p>
+            </div>
+            <div class="experience-item">
+                <h3 class="experience-title">Software Engineer</h3>
+                <p class="experience-company">Web Solutions Corp.</p>
+                <p class="experience-dates">2016 - 2018</p>
+                <p class="experience-description">
+                    Developed and maintained web applications using PHP and MySQL.
+                    Worked in an Agile environment to deliver high-quality software.
+                    Contributed to improving the performance of existing systems.
+                </p>
+            </div>
+        </section>
+
+        <section class="section-content">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <h3 class="education-degree">Master of Science in Computer Science</h3>
+                <p class="education-institution">Stanford University</p>
+                <p class="education-dates">2014 - 2016</p>
+            </div>
+            <div class="education-item">
+                <h3 class="education-degree">Bachelor of Science in Computer Engineering</h3>
+                <p class="education-institution">University of California, Berkeley</p>
+                <p class="education-dates">2010 - 2014</p>
+            </div>
+        </section>
+
+        <section class="section-content">
+            <h2 class="section-title">Skills</h2>
+            <ul class="skills-list">
+                <li class="skills-list-item">Java</li>
+                <li class="skills-list-item">Spring Boot</li>
+                <li class="skills-list-item">React</li>
+                <li class="skills-list-item">JavaScript</li>
+                <li class="skills-list-item">Python</li>
+                <li class="skills-list-item">SQL</li>
+                <li class="skills-list-item">Agile</li>
+                <li class="skills-list-item">Git</li>
+                <li class="skills-list-item">AWS</li>
+                <li class="skills-list-item">Docker</li>
+            </ul>
+        </section>
+
+        <section class="section-content">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-item">
+                <h3 class="project-title">E-commerce Platform</h3>
+                <p class="project-description">Developed a scalable e-commerce platform with features like product browsing, shopping cart, and checkout.  Focused on performance and security.</p>
+                <p class="project-technologies">Technologies: Java, Spring Boot, React, MySQL, AWS</p>
+            </div>
+            <div class="project-item">
+                <h3 class="project-title">Data Analysis Tool</h3>
+                <p class="project-description">Created a data analysis tool to visualize and analyze sales data.  Implemented interactive charts and reports.</p>
+                <p class="project-technologies">Technologies: Python, Pandas, Matplotlib, JavaScript</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
